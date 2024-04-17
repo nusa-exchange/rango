@@ -1,7 +1,7 @@
 FROM golang:1.18.1-alpine AS builder
 
 RUN apk add --no-cache curl git
-RUN curl -Lo /usr/bin/kaigara https://github.com/QenjieRepository/kaigara/releases/download/0.0.1/kaigara \
+RUN curl -Lo /usr/bin/kaigara https://github.com/nusa-exchange/kaigara/releases/download/0.0.1/kaigara \
   && chmod +x /usr/bin/kaigara
 
 WORKDIR /build
